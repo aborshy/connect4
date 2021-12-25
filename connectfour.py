@@ -91,7 +91,7 @@ class Connect:
 
         # check if full
         if len([x for x in current_board if x != " "]) == len(current_board):
-            print('tie!')
+            print("It's a tie!")
             self.playing = False
 
 
@@ -106,3 +106,4 @@ while program_on:
         else:
             game.display()
             print(f'Player {game.turn} has won!')
+            program_on = False
