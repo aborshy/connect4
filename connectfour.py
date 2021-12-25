@@ -80,7 +80,7 @@ class Connect:
         bdiag = [''.join(x) for x in bdiag if len(x) > 3]
 
         win_list = ['xxxx', 'oooo']
-        check_list = list(set((itertools.chain(cols, rows, fdiag, bdiag))))
+        check_list = set((itertools.chain(cols, rows, fdiag, bdiag)))
         current_board = self.board.flatten()
 
         # check for win
